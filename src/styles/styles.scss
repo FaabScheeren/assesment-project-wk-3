@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+
+.navbar a {
+  padding: 10px;
+  color: black;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+.callToAction {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 15px;
+}
