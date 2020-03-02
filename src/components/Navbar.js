@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <div>
       <div className="navbar">
-        <NavLink to="/" exact="true">
+        <NavLink to="/" exact={true}>
           Home
         </NavLink>
         <NavLink to="/schedule">Doctor schedule</NavLink>

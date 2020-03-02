@@ -1,9 +1,19 @@
 import React from "react";
 
 export default function() {
+  const today = new Date();
+  const hour = today.getHours();
+  const minutes = today.getMinutes();
+  const currentTime = `${hour}:${minutes}`;
+  const word = hour < 8 && hour >= 17 ? "closed" : "open";
+
   return (
     <div>
-      <p>We are open</p>
+      <p>
+        We are <strong>{word}</strong>
+        <br />
+        Current time: {currentTime}
+      </p>
       <p>
         To make an appointment
         <br />
@@ -13,3 +23,5 @@ export default function() {
     </div>
   );
 }
+
+// 08:00 and 16:59

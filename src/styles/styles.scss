@@ -17,3 +17,39 @@
   margin: 0 auto;
   margin-top: 15px;
 }
+
+.signupForm {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.signupForm p {
+  display: inline-block;
+}
+
+.signupForm div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submitButton {
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  margin: 10px 0;
+  padding: 8px 15px;
+}
+
+.onDutySchedule {
+  margin: 0 auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+.onDutySchedule td,
+.onDutySchedule th {
+  border: 1px solid black;
+  margin: 0;
+  padding: 5px 35px;
+}
