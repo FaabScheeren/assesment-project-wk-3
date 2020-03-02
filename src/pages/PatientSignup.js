@@ -28,7 +28,6 @@ export default function PatientSignup() {
 
   return (
     <div>
-      <NavigationBar />
       <h1>Patient signup</h1>
       <p>All fields are required!</p>
       <form className="signupForm" onSubmit={submitHandler}>
