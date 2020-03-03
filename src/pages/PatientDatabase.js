@@ -12,13 +12,14 @@ export default function(props) {
   }
 
   function filterHandler(e) {
-    set_sortBy(e.target.value);
+    const chosen = JSON.parse(e.target.value);
+    set_sortBy(chosen);
   }
 
   const patientsSorted = [...patients].sort(sortLastName);
 
   function filterOnDoctor(patient) {
-    if (patient.doctorId == sortBy) {
+    if (patient.doctorId === sortBy) {
       return (
         <PatientCard
           key={patient.id}

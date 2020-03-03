@@ -24,8 +24,8 @@ export default function(props) {
         {details && (
           <div>
             <p>Email: {props.email}</p>
-            <p>Phone number {props.phoneNumber}</p>
-            <p>Gender {props.gender}</p>
+            <p>Phone number: {props.phoneNumber}</p>
+            <p>Gender: {props.gender}</p>
             <p>prescriptions: {props.prescriptions.join(", ")}</p>
           </div>
         )}

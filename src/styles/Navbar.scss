@@ -39,6 +39,7 @@
 @media only screen and (max-width: 500px) {
   .navbar {
     padding-top: 0px;
+    background-color: white;
   }
 
   .navbar label {
@@ -56,6 +57,7 @@
     display: block;
     border-bottom: 1px solid #eaeaeb;
     margin: 0;
+    color: black;
   }
 
   #toggle:checked + .navbarLinks {

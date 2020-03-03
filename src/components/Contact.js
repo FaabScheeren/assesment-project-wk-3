@@ -15,6 +15,16 @@ export default function() {
   const currentTime = `${hour}:${m}`;
   const word = hour < 8 || hour >= 17 ? "closed" : "open";
 
+  // const OfficeHours = () => {
+  //   if (hour > 16) {
+  //     return "closed";
+  //   } else if (hour === 14 && minutes <= 22) {
+  //     return "closed";
+  //   } else {
+  //     return "open";
+  //   }
+  // };
+
   return (
     <div>
       <p>
