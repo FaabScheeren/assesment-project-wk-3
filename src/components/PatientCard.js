@@ -3,8 +3,15 @@ import "../styles/styles.scss";
 
 export default function(props) {
   const [details, set_details] = useState(false);
+  const [buttonContent, set_buttonContent] = useState("Show details");
 
   function toggleDetails() {
+    if (details === false) {
+      set_buttonContent("Hide details");
+    } else if (details === true) {
+      set_buttonContent("Show details");
+    }
+
     set_details(!details);
   }
 
@@ -22,7 +29,7 @@ export default function(props) {
             <p>prescriptions: {props.prescriptions.join(", ")}</p>
           </div>
         )}
-        <button onClick={toggleDetails}>Show details</button>
+        <button onClick={toggleDetails}>{buttonContent}</button>
       </div>
     </div>
   );
