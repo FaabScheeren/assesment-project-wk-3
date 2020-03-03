@@ -1,0 +1,48 @@
+.signupForm {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.signupForm p {
+  display: inline-block;
+}
+
+.signupForm div {
+  display: flex;
+  justify-content: space-between;
+}
+
+#signupForm input {
+  width: 200px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+.submitButton {
+  background-color: black;
+  color: white;
+  margin: 10px 0;
+  width: 150px !important;
+  height: 30px !important ;
+  padding: 8px 0px;
+}
+
+#signupForm select {
+  width: 206px;
+  height: 25px;
+  margin-bottom: 5px;
+  border-radius: 0px;
+  padding-left: 10px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='%23444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
+  background-position: 100% 0%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 450px) {
+  .signupForm {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
