@@ -5,7 +5,7 @@ export default function() {
   const hour = today.getHours();
   const minutes = today.getMinutes();
   const currentTime = `${hour}:${minutes}`;
-  const word = hour < 8 && hour >= 17 ? "open" : "closed";
+  const word = hour < 8 || hour >= 17 ? "closed" : "open";
 
   return (
     <div>
