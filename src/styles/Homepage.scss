@@ -10,3 +10,9 @@
 .callToAction a {
   text-decoration-line: none;
 }
+
+@media (max-width: 450px) {
+  .callToAction {
+    border: 1px solid black;
+  }
+}

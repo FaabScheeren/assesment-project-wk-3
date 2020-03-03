@@ -39,3 +39,10 @@
   background-position: 100% 0%;
   background-repeat: no-repeat;
 }
+
+@media (max-width: 450px) {
+  .signupForm {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
