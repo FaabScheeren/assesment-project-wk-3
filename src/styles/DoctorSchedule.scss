@@ -1,0 +1,18 @@
+.onDutySchedule {
+  margin: 50px auto;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+.onDutySchedule td,
+.onDutySchedule th {
+  border: 1px solid black;
+  margin: 0;
+  padding: 5px 60px;
+}
+
+.onDutySchedule th {
+  background-color: grey;
+  color: white;
+}

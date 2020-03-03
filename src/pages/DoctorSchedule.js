@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import Contact from "../components/Contact";
+import "../styles/DoctorSchedule.scss";
 
 export default function DoctorSchedule(props) {
   return (
-    <div>
+    <div className="container">
       <h1>Who is on duty?</h1>
       <p>{props.status}</p>
       <table className="onDutySchedule">

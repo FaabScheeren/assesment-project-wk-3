@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import NavigationBar from "../components/NavigationBar";
-import "../styles/styles.scss";
+import "../styles/PatientSignup.scss";
 
 export default function PatientSignup() {
   const patient = {
@@ -27,7 +26,7 @@ export default function PatientSignup() {
   }
 
   return (
-    <div>
+    <div id="signupForm" className="container">
       <h1>Patient signup</h1>
       <p>All fields are required!</p>
       <form className="signupForm" onSubmit={submitHandler}>
@@ -94,5 +93,3 @@ export default function PatientSignup() {
     </div>
   );
 }
-
-// gender, and a date input for dateOfBirth

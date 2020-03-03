@@ -1,10 +1,18 @@
 import React from "react";
 
 export default function() {
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+
   const today = new Date();
   const hour = today.getHours();
   const minutes = today.getMinutes();
-  const currentTime = `${hour}:${minutes}`;
+  const m = checkTime(minutes);
+  const currentTime = `${hour}:${m}`;
   const word = hour < 8 || hour >= 17 ? "closed" : "open";
 
   return (

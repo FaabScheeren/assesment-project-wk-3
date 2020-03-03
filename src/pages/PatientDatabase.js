@@ -1,9 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PatientCard from "../components/PatientCard";
+import "../styles/PatientDatabase.scss";
 
 export default function(props) {
   const [sortBy, set_sortBy] = useState("");
   const patients = props.patients;
+  const doctors = props.currentDoctor;
 
   function sortLastName(patient_a, patient_b) {
     return patient_a.lastName.localeCompare(patient_b.lastName);
@@ -46,14 +48,19 @@ export default function(props) {
   }
 
   return (
-    <div>
+    <div className="container">
       <h1>Patient database</h1>
       <p>{props.status}</p>
-      <select onChange={filterHandler}>
+      <p id="doctorToggleName">Doctor:</p>
+      <select onChange={filterHandler} id="doctorToggle">
         <option>Make a choose</option>
-        <option value={1}>Dr. Coverntry</option>
-        <option value={2}>Dr. Adenet</option>
-        <option value={3}>Dr. Tollady</option>
+        {doctors.map(doctor => {
+          return (
+            <option key={doctor.id} value={doctor.id}>
+              {doctor.doctor}
+            </option>
+          );
+        })}
         <option value={"All"}>All</option>
       </select>
       {patientsSorted.map(filterOnDoctor)}

@@ -8,8 +8,6 @@ export default function(props) {
     set_details(!details);
   }
 
-  console.log(props.prescriptions);
-
   return (
     <div className="patientCard">
       <div>

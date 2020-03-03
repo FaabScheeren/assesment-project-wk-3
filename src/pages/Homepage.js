@@ -1,10 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Contact from "../components/Contact";
+import "../styles/Homepage.scss";
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="container">
       <h1>Welcom to AMS GPs</h1>
       <Contact />
 

@@ -1,0 +1,22 @@
+.navbar a {
+  margin: 10px;
+  padding-right: 10px;
+  color: black;
+  // border-right: 1px solid black;
+}
+
+.navbar a.active {
+  font-weight: bold;
+}
+
+.container {
+  padding: 50px 0;
+}
+
+.navbar > :last-child {
+  border-right: none !important;
+}
+
+.navbar a {
+  border-right: 1px solid black;
+}
